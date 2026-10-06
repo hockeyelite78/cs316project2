@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Text</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+h1 {
+text-align:center;
+}
+p::first-line {
+text-transform: uppercase;
+}
+.secret input {
+display: none;
+}
+.secret span {
+color: transparent;
+border-bottom: 2px dotted gray;
+cursor: pointer;
+}
+.secret span::selection {
+color: transparent;
+background-color: transparent;
+}
+.secret input:checked + span {
+color: brown;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+<nav class="topbar">
+<a href="index.html">Home</a>
+<a href="images.html">Images</a>
+<a href="hidden.html">Hidden</a>
+</nav>
+
+<h1>Hidden Text</h1>
+
+<p>He found the end of the rainbow and was surprised at what he found there. <label class="secret"><input type="checkbox"><span>pineapple</span></label> The clouds formed beautiful animals in the sky that eventually created a tornado to wreak havoc. <label class="secret"><input type="checkbox"><span>rocket</span></label> David subscribes to the "stuff your tent into the bag" strategy over nicely folding it.</p>
+
+<p>She looked at the masterpiece hanging in the museum but all she could think is that her five-year-old could do better. I purchased a baby clown from the Russian terrorist black market. She found his complete dullness interesting <label class="secret"><input type="checkbox"><span>penguin</span></label> They say people remember important moments in their life well, yet no one even remembers their own birth.</p>
+
+<p>Love is not like pizza. <label class="secret"><input type="checkbox"><span>thunder</span></label> The opportunity of a lifetime passed before him as he tried to decide between a cone or a cup. <label class="secret"><input type="checkbox"><span>waffle</span></label> Potato wedges probably are not best for relationships.</p>
+
+<p>It dawned on her that others could make her happier, but only she could make herself happy.<label class="secret"><input type="checkbox"><span>banana</span></label> The urgent care center was flooded with patients after the news of a new deadly virus was made public. </p>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Images</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+h1 {
+text-align:center;
+}
+.gallery {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 15px;
+}
+.gallery img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border: 5px solid brown;
+}
+</style>
+</head>
+<body>
+<nav class="topbar">
+<a href="index.html">Home</a>
+<a href="images.html">Images</a>
+<a href="hidden.html">Hidden</a>
+</nav>
+
+<h1>Images</h1>
+<div class="gallery">
+    <img src="images/forest.jpeg" alt="Forest">
+    <img src="images/field.jpeg" alt="Field">
+    <img src="images/beach.jpeg" alt="Beach">
+    <img src="images/river.jpeg" alt="River">
+    <img src="images/mountains.jpeg" alt="Mountains">
+    <img src="images/road.jpeg" alt="Road">
+</div>
+
+</body>
+</html>
